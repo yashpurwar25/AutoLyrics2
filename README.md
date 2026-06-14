@@ -1,15 +1,21 @@
- AutoLyrics — Singing Voice Transcription
-Fine-tuning Whisper-small with LoRA for music lyrics transcription.
+# 🎤 AutoLyrics — Singing Voice Transcription
+
+Fine-tuning OpenAI Whisper with LoRA for music lyrics transcription.
 
 ## Results
-| Model | WER |
-|-------|-----|
-| Baseline (zero-shot) | 5.36% |
-| LoRA Fine-tuned | 0.22% |
-| Relative Improvement | 95.8% |
+| Model | WER | Relative Improvement |
+|-------|-----|----------------------|
+| Baseline (zero-shot) | 5.36% | — |
+| LoRA Fine-tuned | 0.22% | **95.8% ✅** |
 
-## Stack
-Python, PyTorch, HuggingFace Transformers, PEFT/LoRA, Gradio
+> Target was >15% relative WER reduction — **EXCEEDED**
 
-## Run
-Open notebook in Google Colab (T4 GPU). Run all cells.
+## Tech Stack
+Python · PyTorch · HuggingFace Transformers · PEFT/LoRA · Gradio · Librosa
+
+## Run in Google Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK)
+
+1. Open the notebook in Colab
+2. Runtime → Change runtime type → T4 GPU
+3. Run all cells
