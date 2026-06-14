@@ -1,0 +1,8 @@
+model_name:   "openai/whisper-small"
+language:     "en"
+data_dir:     "data/processed/hf_dataset"
+output_dir:   "results/baseline"
+# No training — this config is used only for evaluation (zero-shot)
+eval:
+  batch_size: 8
+  split:      "test"
